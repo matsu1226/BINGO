@@ -1,42 +1,115 @@
-body{
+body {
+    box-sizing: border-box;
     font-family: 'Courier New', monospace;
 }
 
-th,td{
+.container {
+    margin: 10px auto 30px;
+    width: 312px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 44px;
+    margin: 10px auto 0px;
+}
+
+/* table　area */
+
+table {
+    margin: 0 auto;
+}
+
+thead th {
+    border-radius: 10%;
+}
+
+th, td {
     background: pink;
     width: 60px;
     height: 60px;
+    padding: 0;
     text-align: center;
     line-height: 60px;
     user-select: none;
     transition: opacity 0.3s 0.1s;
 }
 
-td:hover{
+td:hover {
     cursor: pointer;
     opacity: 0.8;
 }
 
-ul{
+/* btn　area */
+
+.btn-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0px;
+}
+
+#btn {
+    margin-right: 20px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #ef454a;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #d1283e;
+    user-select: none;
+    border: none;
+}
+
+#btn:active {
+    box-shadow: none;
+    position: relative;
+    top: 6px;
+}
+
+.btn-wrapper p {
+    margin: 0;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 50px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+/* num　area */
+
+.num-list {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.num-list{
-    display: flex;
-}
-.num-list li{
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    width: 30px;
-    height: 30px;
+
+.num-list li {
+    border-top: 1px dotted gray;
+    border-left: 1px dotted gray;
+    font-size: 12px;
+    width: 25px;
+    height: 25px;
     text-align: center;
-    line-height: 30px;
+    line-height: 25px;
     user-select: none;
 }
-ul:last-of-type{
-    border-right: 1px solid black;
+
+ul:last-of-type {
+    border-right: 1px dotted gray;
 }
-.num-list li:last-of-type{
-    border-bottom: 1px solid black;
+
+.num-list li:last-of-type {
+    border-bottom: 1px dotted gray;
 }
